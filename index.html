@@ -89,7 +89,7 @@
 	  		bottom: 0;
 	  		transform: translate(-50%,0%);
 	  		text-align: center;
-	  		font-size: 15pt;
+	  		font-size: 50pt;
 	  		text-shadow: 0px 0px 10px #000;
 	  	}
 	  	.kontrol{
@@ -119,58 +119,7 @@
 	  		transform: rotate(45deg);
 	  		z-index: 50;
 	  	}
-  		.kotak{
-  			position: absolute;
-  			top: 0;
-  			left: 0;
-  			width: 100%;
-  			height: 100%;
-  			overflow: hidden;
-  			z-index: -1;
-  		}
-  		.kotak li{
-  			position: absolute;
-  			display: block;
-  			list-style: none;
-  			width: 25px;
-  			height: 25px;
-  			background: rgba(255,255,255,0.2);
-  			animation: animate 20s linear infinite; 
-  			bottom: -150px;
-  			transition: all 1s ease;
-  		}
-  		.kotak li:nth-child(1){
-  			left: 86%;
-  			width: 80px;
-  			height: 80px;
-  			animation-delay: 0s;
-  		}
-  		.kotak li:nth-child(2){
-  			left: 12%;
-  			width: 30px;
-  			height: 30px;
-  			animation-delay: 1.5s;
-  			animation-duration: 10s;
-  		}
-  		.kotak li:nth-child(3){
-  			left: 70%;
-  			width: 100px;
-  			height: 100px;
-  			animation-delay: 5.5s;
-  		}
-  		.kotak li:nth-child(4){
-  			left: 42%;
-  			width: 150px;
-  			height: 150px;
-  			animation-delay: 0s;
-  			animation-duration: 15s; 
-  		}
-  		.kotak li:nth-child(5){
-  			left: 15%;
-  			width: 110px;
-  			height: 110px;
-  			animation-delay: 3.5s;
-  		}
+  		
   		
   		@keyframes animate{
   			0%{
@@ -211,7 +160,7 @@
 		  		transform: translate(-50%,calc(50% + 50px));
 		  	}
 		  	.quotes{
-		  		font-size: 10pt;
+		  		font-size: 14pt;
 		  	}
 		  	.bulat{
 	  			width: 300px;
@@ -223,7 +172,7 @@
 		  		font-size: 10pt;
 		  	}
 		  	.quotes{
-		  		font-size: 5pt;
+		  		font-size: 20pt;
 		  	}
   		}
 	  </style>
@@ -288,13 +237,7 @@
 				<p id="quotation"></p>
 				<p id="source"></p>
 			</div>
-			<ul class="kotak">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+			
 			<div class="bulat">
 				<span></span>
 				<span></span>
@@ -561,7 +504,7 @@
 				$(".jam").css("color","#000");
 				$(".ucapan").css("color","#000");
 				$(".quotes").css("color","#000");
-				$(".quotes").css("text-shadow","0px 0px 10px #FFF");
+				$(".quotes").css("text-shadow","0px 0px 10px #B22222");
 				$(".bulat span").css("border-color","#000");
 				$(".kotak li").css("background","#000");
 			}
@@ -713,53 +656,22 @@
 
 			const quotes = [
 			  {
-			    "quote": "Bila kau ngaku anak editor, editor tai tai anjing",
+			    "quote": "Ketika ku berlari akupun semangat, bilaku pelan maka aku waspada",
 			    "source": "Robert Mahendra"
 			  },
 			  {
-			    "quote": "Bila kau ngaku anak editor, editor tai tai anjing",
+			    "quote": "Idealisme adalah kemewahan terakhir yang hanya dimiliki oleh pemuda",
+			    "source": "Tan Malaka"
+			  },
+			  {
+			    "quote": "Malam begitu sunyi, renunkan diri pun tak henti, melihat hinanya diri ini, karena dosa yang selalu membelenggu dalam diri.",
 			    "source": "Robert Mahendra"
 			  },
 			  {
-			    "quote": "Bila kau ngaku anak editor, editor tai tai anjing",
-			    "source": "Robert Mahendra"
+			    "quote": "Jangan seorangpun menganggap engkau rendah karena engkau muda. jadilah teladan bagi orang-orang percaya,dalam perkataanmu, dalam tingkah lakumu, dalam kasihmu, dalam kesetiaanmu, dan dalam kesucianmu.",
+			    "source": "Rasul Paulus"
 			  },
-			  {
-			    "quote": "Bila kau ngaku anak editor, editor tai tai anjing",
-			    "source": "Robert Mahendra"
-			  },
-			  {
-			    "quote": "Bila kau ngaku anak editor, editor tai tai anjing",
-			    "source": "Robert Mahendra"
-			  },
-			  {
-			    "quote": "Bila kau ngaku anak editor, editor tai tai anjing",
-			    "source": "Robert Mahendra"
-			  },
-			  {
-			    "quote": "Editor TAI TAI AJG",
-			    "source": "Robert Mahendra"
-			  },
-			  {
-			    "quote": "Bila kau ngaku anak editor, editor tai tai anjing",
-			    "source": "Robert Mahendra"
-			  },
-			  {
-			    "quote": "Bila kau ngaku anak editor, editor tai tai anjing",
-			    "source": "Robert Mahendra"
-			  },
-			  {
-			    "quote": "Bila kau ngaku anak editor, editor tai tai anjing",
-			    "source": "Robert Mahendra"
-			  },
-			  {
-			    "quote": "Bila kau ngaku anak editor, editor tai tai anjing",
-			    "source": "Robert Mahendra"
-			  },
-			  {
-			    "quote": "Bila kau ngaku anak editor, editor tai tai anjing",
-			    "source": "Robert Mahendra"
-			  },
+			 
 			]
 			setInterval(randomQuote, 60000);
 			function randomQuote(){
